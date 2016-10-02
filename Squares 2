@@ -1,0 +1,75 @@
+#It draws squares representing the Fibonacci sequence by drawing the square of size 5 next to the squares of sizes 2 and 3,...
+from turtle import *
+reset()
+up()
+goto(-500,300)
+down()
+speed(0)
+def carre(taille):
+    c=0
+    while c<4:
+        forward(taille)
+        right(90)
+        c=c+1
+a=1
+b=1
+n=int(input("entrez nombre de carrés"))
+carre(1)
+forward(1)
+carre(1)
+up()
+goto(-500,299)
+down()
+x=0
+for i in range(n):
+      c=a+b
+      a=b
+      b=c
+      carre(b)
+			x=1-x
+      if x==0:
+          right(90)
+          forward(b)
+          right(90)
+          forward(a)
+          right(180)
+      if x==1:
+          forward(b)
+          left(90)
+          forward(a)
+          right(90)
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
