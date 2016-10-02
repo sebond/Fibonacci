@@ -1,5 +1,4 @@
-# Fibonacci
-# Exercice 35-4
+# It draws squares of size and spacing following the Fibonacci sequence.
 from turtle import *
 reset()
 up()
